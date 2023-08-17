@@ -29,11 +29,11 @@ window.addEventListener('load', () => {
 		
 		const task_edit_el = document.createElement('button');
 		task_edit_el.classList.add('edit');
-		task_edit_el.innerText = 'Edit';
+		task_edit_el.innerText = '編輯';
 
 		const task_delete_el = document.createElement('button');
 		task_delete_el.classList.add('delete');
-		task_delete_el.innerText = 'Delete';
+		task_delete_el.innerText = '刪除';
 
 		task_actions_el.appendChild(task_edit_el);
 		task_actions_el.appendChild(task_delete_el);
@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
 
 		task_edit_el.addEventListener('click', (e) => {
 			if (task_edit_el.innerText.toLowerCase() == "edit") {
-				task_edit_el.innerText = "Save";
+				task_edit_el.innerText = "儲存";
 				task_input_el.removeAttribute("readonly");
 				task_input_el.focus();
 			} else {

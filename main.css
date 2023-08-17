@@ -1,4 +1,5 @@
 :root {
+    --white:#e0dfd9;
 	--dark: #374151;
 	--darker: #1F2937;
 	--darkest: #111827;
@@ -19,7 +20,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	color: #FFF;
-	background-color: var(--dark);
+	background-color: var(--white);
 }
 
 header {
@@ -55,6 +56,7 @@ input, button {
 	margin-right: 1rem;
 	color: var(--light);
 	font-size: 1.25rem;
+    opacity: 0.7;
 }
 
 #new-task-input::placeholder {
@@ -62,10 +64,10 @@ input, button {
 }
 
 #new-task-submit {
-	color: var(--pink);
+	color: var(--darkest);
 	font-size: 1.25rem;
 	font-weight: 700;
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-color: var(--dark);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
@@ -73,11 +75,11 @@ input, button {
 }
 
 #new-task-submit:hover {
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 #new-task-submit:active {
-	opacity: 0.6;
+	opacity: 0.;
 }
 
 main {
@@ -101,7 +103,7 @@ main {
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--darkest);
+	background-color: var(--grey);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
@@ -120,7 +122,7 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-	color: var(--pink);
+	color: var(--darkest);
 }
 
 .task .actions {
@@ -138,15 +140,15 @@ main {
 }
 
 .task .actions button:hover {
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .task .actions button:active {
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .task .actions .edit {
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	background-image: linear-gradient(to right, var(--dark), var(--darkest));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
