@@ -156,3 +156,9 @@ main {
 .task .actions .delete {
 	color: crimson;
 }
+
+.task {
+    /* 其他樣式 */
+    opacity: 0; /* 初始透明度為0，元素隱藏 */
+    transition: opacity 1.5s; /* 定義淡入淡出過渡效果，持續1.5秒 */
+}
